@@ -1,38 +1,95 @@
-.App {
+/* NavBar - start */
+
+.navbar {
+  background-color: #222224;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar ul li {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar ul li a {
+  padding: 20px;
   color: white;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar ul li a:hover {
+  background-color: #2a6fa1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* NavBar - end */
+
+/* Calculator - start */
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 256px;
+  border: 10px solid #222224;
+  background-color: #222224;
+  border-radius: 10px;
 }
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+.keyboard > button {
+  font-size: 20px;
+  background-color: #1a1a1c;
+  color: white;
+  border: 2px solid #222224;
+  border-radius: 10px;
+}
+
+.keyboard > button:hover {
+  background-color: #343436;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input {
+  height: 75px;
+  width: 249px;
+  background-color: #222224;
+  color: white;
+  border: 0px;
+  font-size: 25px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+#clear-btn {
+  grid-column: 1/3;
+  background-color: #2a6fa1;
+}
+
+#clear-btn:hover{
+  background-color: #0789e8;
+}
+
+#equal-btn {
+  grid-column: 3/5;
+  background-color: #2a6fa1;
+}
+
+#equal-btn:hover{
+  background-color: #0789e8;
+}
+
+/* Calculator - end */
