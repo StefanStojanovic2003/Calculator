@@ -24,7 +24,7 @@ function Calculator() {
             //     case ".": setResult(result + e.target.name); break;
             // }
 
-            if(result.length <= 16){
+            if(result.length <= 16 ){
                 setResult(result.toString().concat(e.target.name));
             }
 
@@ -43,9 +43,12 @@ function Calculator() {
         }
             
         const decimalButton = (e) => {
-            if( result.includes(".") == false ){
+            if( result.includes(".") === true || result === ""){
+                return 0;
+            }else{
                 setResult(result.toString().concat(e.target.name));
             }
+
         }
 
         const equalButton = () => {
