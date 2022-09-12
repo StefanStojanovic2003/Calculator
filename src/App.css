@@ -63,7 +63,7 @@
   transition: 0.3s;
 }
 
-input {
+.output {
   height: 75px;
   width: 249px;
   background-color: #222224;
