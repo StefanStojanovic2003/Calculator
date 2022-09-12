@@ -41,9 +41,7 @@ function Calculator() {
         }
             
         const decimalButton = (e) => {
-            if(result.includes(".") == true){
-                console.log("Err");
-            }else{
+            if( result.includes(".") == false ){
                 setResult(result.toString().concat(e.target.name));
             }
         }
@@ -83,8 +81,8 @@ function Calculator() {
                     <button onClick={buttonClick} name="3">3</button>
                     <button onClick={buttonClick} name="-">-</button>
                     <button onClick={buttonClick} name="0">0</button>
-                    <button onClick={buttonClick} name=".">.</button>
-                    <button onClick={decimalButton} id="equal-btn">=</button>
+                    <button onClick={decimalButton} name=".">.</button>
+                    <button onClick={equalButton} id="equal-btn">=</button>
                 </div>
             </div>
         )
