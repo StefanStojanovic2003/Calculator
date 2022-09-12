@@ -32,7 +32,11 @@ function Calculator() {
         }
 
         const deleteButton = () => {
+            if(result === "Error"){
+                setResult("");
+            }else{
                 setResult(result.toString().slice(0, -1));
+            }
         }
             
 
