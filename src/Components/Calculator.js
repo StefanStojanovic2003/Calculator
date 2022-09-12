@@ -24,7 +24,9 @@ function Calculator() {
             //     case ".": setResult(result + e.target.name); break;
             // }
 
-            setResult(result.toString().concat(e.target.name));
+            if(result.length <= 16){
+                setResult(result.toString().concat(e.target.name));
+            }
 
         }
 
