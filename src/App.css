@@ -75,7 +75,6 @@
 }
 
 #clear-btn {
-  grid-column: 1/3;
   background-color: #2a6fa1;
 }
 
@@ -84,7 +83,6 @@
 }
 
 #equal-btn {
-  grid-column: 3/5;
   background-color: #2a6fa1;
 }
 

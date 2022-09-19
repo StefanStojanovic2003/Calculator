@@ -3,7 +3,7 @@ import NavBar from "./Components/NavBar";
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Calculator from './Components/Calculator';
-import CurrencyConverter from './Components/CurrencyConverter';
+import PDVCalculator from './Components/PDVCalculator';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
 
         <Routes>
           <Route path='/' exact element={<Calculator />} />
-          <Route path='/currency-converter' element={<CurrencyConverter />} />
+          <Route path='/pdv-calculator' element={<PDVCalculator />} />
         </Routes>
       </BrowserRouter>
     </div>
