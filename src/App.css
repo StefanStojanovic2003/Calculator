@@ -1,93 +1,180 @@
 /* NavBar - start */
-
 .navbar {
-  background-color: #222224;
-  color: white;
-  text-align: center;
+    background-color: #222224;
+    color: white;
+    text-align: center;
 }
-
+  
 .navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
-
+  
+  
 .navbar ul li {
-  display: inline-block;
+    display: inline-block;
 }
-
+  
 .navbar ul li a {
-  padding: 20px;
-  color: white;
-  display: block;
+    padding: 20px;
+    color: white;
+    display: block;
 }
-
+  
 .navbar ul li a:hover {
-  background-color: #2a6fa1;
+    background-color: #2a6fa1;
 }
-
 /* NavBar - end */
 
 /* Calculator - start */
-
-.container {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  width: 256px;
-  border: 10px solid #222224;
-  background-color: #222224;
-  border-radius: 10px;
+.container-calculator {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 256px;
+    border: 10px solid #222224;
+    background-color: #222224;
+    border-radius: 10px;
 }
-
+  
 .keyboard {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(60px, auto);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
 }
 .keyboard > button {
-  font-size: 20px;
-  background-color: #1a1a1c;
-  color: white;
-  border: 2px solid #222224;
-  border-radius: 10px;
+    font-size: 20px;
+    background-color: #1a1a1c;
+    color: white;
+    border: 2px solid #222224;
+    border-radius: 10px;
 }
-
+  
 .keyboard > button:hover {
-  background-color: #343436;
-  cursor: pointer;
-  transition: 0.3s;
+    background-color: #343436;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
+  
 .output {
-  height: 75px;
-  width: 249px;
-  background-color: #222224;
-  color: white;
-  border: 0px;
-  font-size: 25px;
-  text-align: right;
-  letter-spacing: 1px;
+    height: 75px;
+    width: 249px;
+    background-color: #222224;
+    color: white;
+    border: 0px;
+    font-size: 25px;
+    text-align: right;
+    letter-spacing: 1px;
 }
-
+  
 #clear-btn {
-  background-color: #2a6fa1;
+    background-color: #2a6fa1;
 }
-
+  
 #clear-btn:hover{
-  background-color: #0789e8;
+    background-color: #0789e8;
 }
-
+  
 #equal-btn {
-  background-color: #2a6fa1;
+    background-color: #2a6fa1;
 }
-
+  
 #equal-btn:hover{
-  background-color: #0789e8;
+    background-color: #0789e8;
+}
+  
+/* Calculator - end */
+
+/* PDVCalculator - start */
+.containerPdv {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 15px;
+    border: 10px solid #222224;
+    background-color: #222224;
+    border-radius: 10px;
 }
 
-/* Calculator - end */
+.containerPdv input {
+    height: 20px;
+    background-color: #343436;
+    border: 5px solid #343436;
+    color: white;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.headingPdv {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#pdvPlus{
+    margin-bottom: 20px;
+}
+
+#resultPlusPdv{
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+#resultMinusPdv{
+    margin-right: 30px;
+}
+
+#addedPlusPdv{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#addedMinusPdv{
+    width: 100%;
+}
+.containerPdv label {
+    color: white;
+    display: inline;
+    float: right;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+table{
+    margin-bottom: 20px;
+}
+
+thead{
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+#calculateButton {
+    font-size: 20px;
+    background-color: #2a6fa1;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+#calculateButton:hover {
+    background-color: #0789e8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* PDVCalculator - end */

@@ -95,9 +95,11 @@ function Calculator() {
                 setResult((value1/100) * value2)
               }
         }
+
+        console.log(2+2*3);
     
         return(
-            <div className="container">
+            <div className="container-calculator">
                 <div className="output">{result}</div>
                 <div className="keyboard">
                     <button onClick={clearButton} id="clear-btn">Clear</button>
