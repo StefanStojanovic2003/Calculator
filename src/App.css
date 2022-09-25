@@ -172,10 +172,6 @@
     transition: 0.3s;
 }
 
-.result {
-    display: none;
-}
-
 @media only screen and (max-width: 600px) {
     .containerPdv input {
         font-size: 15px;
