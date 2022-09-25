@@ -103,78 +103,73 @@
     border-radius: 10px;
 }
 
-.containerPdv input {
-    height: 20px;
-    background-color: #343436;
-    border: 5px solid #343436;
-    color: white;
-    width: 100px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.headingPdv {
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-#pdvPlus{
-    margin-bottom: 20px;
-}
-
-#resultPlusPdv{
-    margin-bottom: 20px;
-    margin-right: 30px;
-}
-
-#resultMinusPdv{
-    margin-right: 30px;
-}
-
-#addedPlusPdv{
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-#addedMinusPdv{
-    width: 100%;
-}
 .containerPdv label {
+    font-size: 30px;
     color: white;
-    display: inline;
-    float: right;
     font-weight: 500;
-    font-size: 20px;
-    margin-left: 5px;
 }
 
-table{
-    margin-bottom: 20px;
-}
-
-thead{
-    color: white;
-    text-align: left;
+.containerPdv input {
+    width: 450px;
+    height: 40px;
+    font-size: 18px;
     font-weight: 500;
-    font-size: 20px;
-    
-}
-
-#calculateButton {
-    font-size: 20px;
-    background-color: #2a6fa1;
-    border: none;
     color: white;
+    background-color: #343436;
+    border: 0px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.containerPdv select {
+    width: 450px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #343436;
+    border: 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.options {
+    border: 0px;
+    border-radius: 10px;
+}
+
+.containerPdv button{
+    margin-top: 40px;
+    margin-right:15px;
+    margin-left: 15px;
     width: 200px;
     height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#calculateButton:hover {
+#addVAT {
+    background-color: #2a6fa1;
+}
+
+#addVAT:hover {
     background-color: #0789e8;
     cursor: pointer;
     transition: 0.3s;
 }
+
+#removeVAT {
+    background-color: #990000;
+}
+
+#removeVAT:hover {
+    background-color: #a52a2a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 /* PDVCalculator - end */
